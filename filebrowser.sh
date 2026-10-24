@@ -336,4 +336,3 @@ purge)
 	exit 2
 	;;
 esac
-
