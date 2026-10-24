@@ -107,4 +107,3 @@ sudo ./filebrowser.sh purge
 ## 许可证
 
 [MIT](LICENSE)
-
