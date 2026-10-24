@@ -29,9 +29,26 @@
 | 运行用户 | `filebrowser`（非 root） |
 | 上游版本 | `v2.63.23`（最后计划发布版本） |
 
-## 安装或升级
+## 一键下载安装
+
+直接从本仓库下载并安装：
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/brian952700/filebrowser/master/filebrowser.sh | sudo bash -s -- install
+```
+
+如果当前已经是 `root` 用户：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/brian952700/filebrowser/master/filebrowser.sh | bash -s -- install
+```
+
+该命令会立即执行远程脚本。希望先检查脚本内容时，请使用下面的分步安装方式。
+
+## 下载后安装（便于先检查脚本）
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/brian952700/filebrowser/master/filebrowser.sh -o filebrowser.sh
 chmod +x filebrowser.sh
 sudo ./filebrowser.sh install
 ```
